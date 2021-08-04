@@ -244,15 +244,15 @@ definitions:
             type: string
             description: Placeholder text for dropdown field type.
           items:
-            type: object
+            type: array
             description: List of possible values for this field.
-            properties:
-              value:
-                type: string
-                description: Field option value.
-              label:
-                type: string
-                description: User friendly label.
+            items:
+              type: object
+              properties:
+                label:
+                  type: string
+                value:
+                  type: string
 tags:
   - name: Form Fields
 basePath: /api/storefront
