@@ -15,7 +15,7 @@ paths:
       description: Creates a webhook. Only one webhook at a time can be created. Custom headers can be added. Destination URL must be served on port 443 (custom ports are not currently supported).
       operationId: createWebhooks
       parameters:
-        - $ref: '#/components/parameters/Accept'
+        - $ref: '#/components/parameters/Acceptting'
         - $ref: '#/components/parameters/Content-Type'
       requestBody:
         content:
